@@ -1,0 +1,86 @@
+
+To check git version 
+    git --version
+
+step 1: To initialize git 
+    git init
+
+step 2: To configure git
+    git config --global user.name 'my username'
+                    &
+    git config --global user.email 'my email'
+
+step 3: To check git status
+    git status
+
+step 4: To add all files to repository
+    git add .
+
+step 5: To commit files to repository
+    git commit -m "first commit"
+
+step 6: To add new repository
+    git remote add origin https://github.com/maheshvarma27/How-to-use-git.git
+
+step 7: To push code to git
+    git push -u origin master
+
+------------------------------------------------------------------------------------
+
+step 8: To remove files ( i am not sure)
+    git rm --cached filename.extension
+
+-----------------------------------------------------------------------------------
+
+                    CREATING A NEW BRANCH OTHER THAN MASTER BRANCH
+
+setp 1: To create a new branch
+    git branch branch-name
+
+step 2: To Switch from master branch to dev branch
+    git checkout branch-name
+
+step 3: After making changes or adding new files to commit files to repository
+    git commit -m "branch-name"
+
+step 4: To switch back to master branch from dev branch
+    git checkout master
+  Note: when we switched back to master branch from dev branch, changes made in dev branch do not appear in code edditor
+            like you added new files in dev branch using code editor and after some time you switched back to master branch
+            now the code changes/new added files in dev branch will not displayed in master branch.
+
+-----------------------------------------------------------------------------------
+
+                    MERGING DEV BRANCH FILES TO MASTER BRANCH
+
+step 1: To merge dev branch files to prod branch
+    git merge branch-name
+  Note: It will ask a message to explain why this merge  is necessary
+        ADD message like this " added login page and registration page" 
+        like that what ever you added newly you need to describe in messages
+
+        EXTRA STUFF while cmd is something different
+            --------------
+             press escape
+             press :wq 
+             press enter
+            --------------
+
+---------------------------------------------------------------------------------
+
+                                EXTRA COMMANDS
+
+step 1: To check the current remote repository
+    git remote
+        this will display you the current repository
+
+step 2: To add a new remote repository
+    git remote add origin Your-repository-link
+
+    example : git remote add origin https://github.com/maheshvarma27/How-to-use-git.git
+
+step 3: To clone a project
+    git clone repository-link
+
+    example: git clone https://github.com/maheshvarma27/How-to-use-git.git
+
